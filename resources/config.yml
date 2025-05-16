@@ -1,0 +1,42 @@
+# IMPORTANT
+# DO NOT CHANGE THE KEY NAME IF YOU DON'T UNDERSTAND
+# REMAKE THIS PLUGIN FOR PERSONAL USE, DO NOT SELL OR CHANGE THE AUTHOR
+# USE '&' FOR COLORING, LIKE '&a' FOR GREEN
+
+# PREFIX MESSAGE
+prefix: "&7[&aGIFT&7] &8»&r "
+
+# BLACKLIST ITEM CONFIGURATION
+# Items in this list cannot be gifted to other players
+# Item names should match Minecraft vanilla names (case-insensitive)
+blacklist-item:
+  - "tnt"
+  - "bedrock"
+  - "end_portal_frame"
+  - "command_block"
+  - "barrier"
+  - "structure_block"
+  - "structure_void"
+
+# MESSAGE CONFIGURATION
+# Use these placeholders in your messages:
+# @TARGET@ - Recipient player's name
+# @SENDER@ - Sender player's name
+
+# Error messages
+item:
+  invalid: "&cYou need to hold an item in your hand to gift it."
+  blacklist: "&cThis item is blacklisted and cannot be given as a gift."
+
+# Player not found message
+target:
+  not_found: "&cPlayer &e@TARGET@&c could not be found."
+
+# Inventory messages
+inventory:
+  target_full: "&cCannot give item to &e@TARGET@&c because their inventory is full."
+
+# Success messages
+gift:
+  sender_success: "&aYou have successfully gifted an item to &e@TARGET@&a!"
+  target_received: "&aYou received a gift from &e@SENDER@&a!"
