@@ -19,15 +19,16 @@ A lightweight PocketMine-MP plugin that allows players to gift items to other pl
 
 ## Commands
 
-| Command          | Description                                        | Permission            |
-|------------------|----------------------------------------------------|-----------------------|
-| `/gift <player>` | Gift the item in your hand to the specified player | `xeonch.command.gift` |
+| Command                | Description                                        | Permission           |
+|------------------------|----------------------------------------------------|----------------------|
+| `/simplegift <player>` | Gift the item in your hand to the specified player | `simplegift.command` |
+| `/gift <player>`       | Gift the item in your hand to the specified player | `simplegift.command` |
 
 ## Permissions
 
-| Permission            | Description                           | Default |
-|-----------------------|---------------------------------------|---------|
-| `xeonch.command.gift` | Allows the use of the `/gift` command | true    |
+| Permission           | Description                                          | Default |
+|----------------------|------------------------------------------------------|---------|
+| `simplegift.command` | Allows the use of the `/simplegift or /gift` command | true    |
 
 ## Configuration
 
@@ -84,18 +85,18 @@ The following placeholders can be used in the messages:
 
 1. Basic usage:
    ```
-   /gift Steve
+   /simplegift Steve or /gift Steve
    ```
    This will gift the item in your hand to the player named Steve.
 
 ## Dependencies
 
-- [Commando](https://github.com/CortexPE/Commando) - Command framework
+- [Commando](https://github.com/ACM-PocketMine-MP/Commando) - Command framework
 
 ## Support
 
 If you encounter any issues or have suggestions for improvements, please create an issue on
-the [GitHub repository](https://github.com/xeonch/SimpleGift/issues).
+the [GitHub repository](https://github.com/Jasson44/SimpleGift/issues).
 
 ## License
 

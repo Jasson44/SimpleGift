@@ -6,6 +6,6 @@ src-namespace-prefix: xeonch\gift
 author: XeonCh
 
 permissions:
-  xeonch.command.gift:
-    description: "Allows the use of the `/gift` command"
+  simplegift.command:
+    description: "Allows the use of the `/simplegift` command"
     default: true

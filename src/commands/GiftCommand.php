@@ -40,12 +40,12 @@ class GiftCommand extends BaseCommand
     {
         $this->addConstraint(new InGameRequiredConstraint($this));
         $this->registerArgument(0, new RawStringArgument("player"));
-        $this->setPermission("xeonch.command.gift");
+        $this->setPermission("simplegift.command");
     }
 
     public function getPermission(): string
     {
-        return "xeonch.command.gift";
+        return "simplegift.command";
     }
 
     public function onRun(CommandSender $sender, string $aliasUsed, array $args): void

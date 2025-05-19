@@ -42,7 +42,7 @@ class Main extends PluginBase
         self::setInstance($this);
         $this->saveDefaultConfig();
         $this->loadVirions();
-        $this->getServer()->getCommandMap()->register("gift", new GiftCommand($this, "gift", "Gift the item in your hand to the specified player "));
+        $this->getServer()->getCommandMap()->register("simplegift", new GiftCommand($this, "simplegift", "Gift the item in your hand to the specified player", ["gift"]));
     }
 
     public function getPrefix(): ?string
